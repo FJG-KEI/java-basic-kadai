@@ -11,7 +11,8 @@ public class Car_Chapter15 {
 	}
 	
 	public void changeGear(int afterGear) {
-		
+		int beforeGear = this.gear;
+		this.gear = afterGear;
 		this.speed = switch(afterGear) {
 		  case 1 -> 10;
 		  case 2 -> 20;
@@ -21,7 +22,7 @@ public class Car_Chapter15 {
 		  default -> 10;
 		};
 		
-		System.out.println("ギア" + this.gear +"から" + afterGear + "に切り替えました");
+		System.out.println("ギア" + beforeGear + "から" + afterGear + "に切り替えました");
 	}
 	
 	public void run() {
