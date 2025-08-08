@@ -2,11 +2,8 @@ package kadai_018;
 
 public class KatoIchiro_Chapter18 extends Kato_Chapter18 {
 
-	public KatoIchiro_Chapter18() {
-		givenName = "一郎";
-	}
-	
 	public void setGivenName() {
+		givenName = "一郎";
 		System.out.println("名前は" + familyName + givenName + "です");
 	}
 	
